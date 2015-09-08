@@ -11,7 +11,7 @@
 static NSString * const cellIdentifier = @"CustomXibReusableCell";
 
 @implementation CustomTableViewController
-
+@synthesize customArray;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,6 +22,10 @@ static NSString * const cellIdentifier = @"CustomXibReusableCell";
     
     [self.tableView registerNib:myCell forCellReuseIdentifier:cellIdentifier];
     
+    ResumesData *resumesData = [[ResumesData alloc]init];
+    customArray = [resumesData CompanyPersonResumes];
+    
+ 
 
     
     }
@@ -41,7 +45,7 @@ static NSString * const cellIdentifier = @"CustomXibReusableCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 1;
+    return customArray.count;
 }
 
 
@@ -52,9 +56,15 @@ static NSString * const cellIdentifier = @"CustomXibReusableCell";
     
     cell = (CustomXibCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
+    Resumes *resumes = [customArray objectAtIndex:indexPath.row];
+    cell.CustomTitle.text = resumes.companyName;
+    cell.CustomDetail1.text = resumes.companyDetails;
     
-        cell.CustomTitle.text = @"Title1";
-        cell.CustomDetail1.text = @"Details1";
+    
+    
+    
+        //cell.CustomTitle.text = @"Title1";
+       // cell.CustomDetail1.text = @"Details1";
     
     return cell;
 }

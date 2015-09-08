@@ -18,6 +18,8 @@
 		FC5FF1A21B9E174300022B3D /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF1A11B9E174300022B3D /* CustomTableViewController.m */; };
 		FC5FF1A41B9E1A3B00022B3D /* CustomXibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5FF1A31B9E1A3B00022B3D /* CustomXibCell.xib */; };
 		FC5FF1A71B9E1AFD00022B3D /* CustomXibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5FF1A61B9E1AFD00022B3D /* CustomXibCell.m */; };
+		FCFCB8A91B9F6BCA0042F296 /* Resumes.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCB8A81B9F6BCA0042F296 /* Resumes.m */; };
+		FCFCB8AC1B9F71380042F296 /* ResumesData.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCB8AB1B9F71380042F296 /* ResumesData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		FC5FF1A31B9E1A3B00022B3D /* CustomXibCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomXibCell.xib; sourceTree = "<group>"; };
 		FC5FF1A51B9E1AFD00022B3D /* CustomXibCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomXibCell.h; sourceTree = "<group>"; };
 		FC5FF1A61B9E1AFD00022B3D /* CustomXibCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomXibCell.m; sourceTree = "<group>"; };
+		FCFCB8A71B9F6BCA0042F296 /* Resumes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resumes.h; sourceTree = "<group>"; };
+		FCFCB8A81B9F6BCA0042F296 /* Resumes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resumes.m; sourceTree = "<group>"; };
+		FCFCB8AA1B9F71380042F296 /* ResumesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResumesData.h; sourceTree = "<group>"; };
+		FCFCB8AB1B9F71380042F296 /* ResumesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResumesData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +152,10 @@
 		FC5FF19E1B9E16D900022B3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FCFCB8A71B9F6BCA0042F296 /* Resumes.h */,
+				FCFCB8A81B9F6BCA0042F296 /* Resumes.m */,
+				FCFCB8AA1B9F71380042F296 /* ResumesData.h */,
+				FCFCB8AB1B9F71380042F296 /* ResumesData.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -265,6 +275,8 @@
 				FC5FF1A21B9E174300022B3D /* CustomTableViewController.m in Sources */,
 				FC5FF17A1B9E167E00022B3D /* AppDelegate.m in Sources */,
 				FC5FF1801B9E167E00022B3D /* ViewController.m in Sources */,
+				FCFCB8A91B9F6BCA0042F296 /* Resumes.m in Sources */,
+				FCFCB8AC1B9F71380042F296 /* ResumesData.m in Sources */,
 				FC5FF1771B9E167E00022B3D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,6 +472,7 @@
 				FC5FF1991B9E167E00022B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FC5FF19A1B9E167E00022B3D /* Build configuration list for PBXNativeTarget "TechComboTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +481,7 @@
 				FC5FF19C1B9E167E00022B3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

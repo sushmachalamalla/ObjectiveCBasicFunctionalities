@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "CustomXibCell.h"
+#import "Resumes.h"
+#include "ResumesData.h"
 
 @interface CustomTableViewController : UITableViewController
 
-
+@property (strong,nonatomic) NSMutableArray *customArray;
 
 @end
